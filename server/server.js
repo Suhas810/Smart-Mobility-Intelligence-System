@@ -2,6 +2,7 @@ require("dotenv").config();
 const http = require("http");
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const mongoose = require("mongoose");
 const { Server } = require("socket.io");
 const apiRoutes = require("./routes/apiRoutes");
@@ -9,18 +10,26 @@ const apiRoutes = require("./routes/apiRoutes");
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: true } });
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/safe-route-ai";
 
 app.use(cors());
 app.use(express.json());
+
+// Serve static frontend files from public folder (built frontend)
+app.use(express.static(path.join(__dirname, "public")));
+
+// API routes
 app.use("/api", apiRoutes);
 app.get("/health", (req, res) => res.json({ status: "Server is running" }));
 
-mongoose
-  .connect(MONGO_URI)
-  .then(() => console.log("✅ MongoDB connected"))
-  .catch((error) => console.error("MongoDB connection error:", error));
+// MongoDB connection (optional - logs error but doesn't crash if unavailable)
+if (MONGO_URI) {
+  mongoose
+    .connect(MONGO_URI)
+    .then(() => console.log("✅ MongoDB connected"))
+    .catch((error) => console.warn("⚠️ MongoDB connection warning:", error.message));
+}
 
 io.on("connection", (socket) => {
   console.log("Socket connected:", socket.id);
@@ -67,6 +76,12 @@ setInterval(() => {
   io.emit("alertUpdate", alert);
 }, 20000);
 
-server.listen(PORT, () => {
-  console.log(`🚀 Safety Alert Server running on http://localhost:${PORT}`);
+// SPA fallback - serve frontend index.html for all non-API routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
+server.listen(PORT, "0.0.0.0", () => {
+  console.log(`🚀 Safety Alert Server running on http://0.0.0.0:${PORT}`);
+});
+
