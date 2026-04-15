@@ -1,0 +1,32 @@
+[
+  {
+    "id": "alert-001",
+    "type": "Crime alert",
+    "title": "Reported theft near MG Road",
+    "message": "Multiple reports of petty theft in the area, use caution when walking after dark.",
+    "location": "MG Road, Bangalore",
+    "severity": "high",
+    "latitude": 12.97,
+    "longitude": 77.59
+  },
+  {
+    "id": "alert-002",
+    "type": "Traffic congestion",
+    "title": "Heavy traffic at Airport Road",
+    "message": "Expect delays and reduced visibility due to congestion.",
+    "location": "Airport Road, Bangalore",
+    "severity": "medium",
+    "latitude": 13.20,
+    "longitude": 77.71
+  },
+  {
+    "id": "alert-003",
+    "type": "Lighting warning",
+    "title": "Low lighting in Jayanagar",
+    "message": "Street lights are dim. Consider alternate well-lit routes.",
+    "location": "Jayanagar, Bangalore",
+    "severity": "medium",
+    "latitude": 12.93,
+    "longitude": 77.58
+  }
+]

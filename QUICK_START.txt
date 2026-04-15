@@ -1,0 +1,52 @@
+# 🎯 QUICK RUN COMMANDS
+
+## ONE-TIME SETUP
+```
+# Terminal 1: Backend
+cd server
+npm install
+npm start
+
+# Terminal 2: Frontend  
+cd client
+npm install
+npm run dev
+```
+
+## DEVELOPMENT (AFTER FIRST SETUP)
+```
+# Terminal 1: Backend
+cd server
+npm start
+
+# Terminal 2: Frontend
+cd client
+npm run dev
+```
+
+## TESTING COORDINATES
+- 12.97, 77.59  (MG Road - UNSAFE)
+- 12.93, 77.62  (Koramangala - MEDIUM)
+- 12.98, 77.59  (Cubbon Park - SAFE)
+- 13.20, 77.71  (Airport Road - MEDIUM)
+- 12.98, 77.60  (Commerce Street - UNSAFE)
+
+## QUICK API TEST
+```
+curl -X POST http://localhost:5000/api/safety \
+  -H "Content-Type: application/json" \
+  -d "{\"lat\": 12.97, \"lng\": 77.59}"
+```
+
+## PORTS
+- Frontend: http://localhost:3000
+- Backend: http://localhost:5000
+- Health: http://localhost:5000/health
+
+## VERIFY INSTALLATION
+```
+Backend: npm install && npm start
+Frontend: npm install && npm run dev
+```
+
+Happy Testing! 🚀

@@ -1,0 +1,22 @@
+[
+  { "name": "MG Road", "latitude": 12.97, "longitude": 77.59, "crime_rate": 8, "lighting": 3, "traffic": 5 },
+  { "name": "Koramangala", "latitude": 12.93, "longitude": 77.62, "crime_rate": 6, "lighting": 7, "traffic": 8 },
+  { "name": "Whitefield", "latitude": 12.97, "longitude": 77.74, "crime_rate": 4, "lighting": 8, "traffic": 9 },
+  { "name": "Jayanagar", "latitude": 12.93, "longitude": 77.58, "crime_rate": 5, "lighting": 6, "traffic": 7 },
+  { "name": "Indiranagar", "latitude": 12.97, "longitude": 77.64, "crime_rate": 3, "lighting": 9, "traffic": 4 },
+  { "name": "Commerce Street", "latitude": 12.98, "longitude": 77.60, "crime_rate": 9, "lighting": 2, "traffic": 6 },
+  { "name": "Cubbon Park", "latitude": 12.98, "longitude": 77.59, "crime_rate": 2, "lighting": 8, "traffic": 3 },
+  { "name": "Airport Road", "latitude": 13.20, "longitude": 77.71, "crime_rate": 4, "lighting": 9, "traffic": 8 },
+  { "name": "JP Nagar", "latitude": 12.89, "longitude": 77.61, "crime_rate": 7, "lighting": 5, "traffic": 6 },
+  { "name": "Silk Board", "latitude": 12.94, "longitude": 77.68, "crime_rate": 6, "lighting": 6, "traffic": 9 },
+  { "name": "Hebbal", "latitude": 13.04, "longitude": 77.59, "crime_rate": 5, "lighting": 7, "traffic": 7 },
+  { "name": "Koramangala 4th Block", "latitude": 12.93, "longitude": 77.62, "crime_rate": 6, "lighting": 7, "traffic": 7 },
+  { "name": "Brookefield", "latitude": 13.02, "longitude": 77.75, "crime_rate": 4, "lighting": 8, "traffic": 8 },
+  { "name": "Bannerghatta Road", "latitude": 12.90, "longitude": 77.58, "crime_rate": 7, "lighting": 5, "traffic": 7 },
+  { "name": "Malleshwaram", "latitude": 13.01, "longitude": 77.57, "crime_rate": 3, "lighting": 7, "traffic": 5 },
+  { "name": "Yelahanka", "latitude": 13.09, "longitude": 77.58, "crime_rate": 4, "lighting": 8, "traffic": 6 },
+  { "name": "Whitefield Tech Park", "latitude": 12.97, "longitude": 77.75, "crime_rate": 4, "lighting": 9, "traffic": 8 },
+  { "name": "Electronic City", "latitude": 12.84, "longitude": 77.66, "crime_rate": 6, "lighting": 6, "traffic": 8 },
+  { "name": "Bannerghatta", "latitude": 12.87, "longitude": 77.58, "crime_rate": 5, "lighting": 6, "traffic": 6 },
+  { "name": "Yeshwanthpur", "latitude": 13.02, "longitude": 77.56, "crime_rate": 5, "lighting": 7, "traffic": 7 }
+]
